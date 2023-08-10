@@ -6,7 +6,7 @@ import {
   import App from "./App";
   import Index from "./pages/Index";
   import Show from "./pages/Show";
-  import { cheeseLoader, cheesLoader } from "./loaders";
+  import { bookmarkLoader, bookmarksLoader } from "./loaders";
   import { createAction, updateAction, deleteAction } from "./actions";
   
   const router = createBrowserRouter(createRoutesFromElements(

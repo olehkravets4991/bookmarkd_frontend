@@ -1,21 +1,21 @@
 import {baseUrl} from './base_url';
 
-export const cheeseLoader = async () => {
+export const bookmarksLoader = async () => {
     // make a call to backend index route
     const response = await fetch(`${baseUrl}/bookmarks`)
     // convert the response in a js object
-    const cheese = await response.json()
+    const bookmarks = await response.json()
     // return the people
-    return cheese
+    return bookmarks
 }
 
-export const cheesLoader = async ({params}) => {
+export const bookmarkLoader = async ({params}) => {
     // get the id param from the params object
     const id = params.id
     // make a call to backend show route
     const response = await fetch(`${baseUrl}/bookmarks/${id}`)
     // convert the response into a js object
-    const chees = await response.json()
+    const bookmark = await response.json()
     // return the person
-    return chees
+    return bookmark
 }
