@@ -6,17 +6,19 @@ function Index(props) {
 
   return (
     <div>
-        <h2>Create a bookmarks</h2>
+        <h2>Create a Bookmark</h2>
         <Form action="/create" method="post">
             <input type="text" name="title" placeholder="bookmarks's title"/>
             <input type="text" name="url" placeholder="bookmarks's url"/>
-            <input type="submit" value="Create "/>
-           
+            <input type="submit" value="Create "/>           
         </Form>
+        
       {bookmarks.map((bookmark, index) => {
         return (
           <div key={bookmark._id} className="bookmark">
-              <h1>{bookmark.title}</h1>
+            <Link to={`/${bookmark._id}`}>
+            <h1>{bookmark.title}</h1>
+            </Link>
             <h3>{bookmark.url}</h3>
           </div>
         );
