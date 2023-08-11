@@ -5,6 +5,7 @@ export const bookmarksLoader = async () => {
     const response = await fetch(`${baseUrl}/bookmarks`)
     // convert the response in a js object
     const bookmarks = await response.json()
+    console.log(bookmarks)
     // return the people
     return bookmarks
 }

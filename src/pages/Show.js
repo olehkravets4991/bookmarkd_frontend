@@ -2,7 +2,6 @@ import { useLoaderData, Form } from 'react-router-dom';
 
 function Show(props) {
     const bookmark = useLoaderData();
-    console.log(bookmark);
 
     return (
         <div className='bookmark'>
@@ -11,8 +10,8 @@ function Show(props) {
 
             <h2>Update {bookmark.title}</h2>
             <Form action={`/update/${bookmark._id}`} method="post">
-                <input type='text' name='Title' placeholder='Bookmark title' defaultValue={bookmark.title}/>
-                <input type='text' name='URL' placeholder='Bookmark URL' defaultValue={bookmark.url}/>
+                <input type='text' name='title' placeholder='Bookmark title' defaultValue={bookmark.title}/>
+                <input type='text' name='url' placeholder='Bookmark URL' defaultValue={bookmark.url}/>
                 <input type='submit' value='Update Bookmark'/>
             </Form>
 
