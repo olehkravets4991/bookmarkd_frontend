@@ -8,7 +8,7 @@ function Show(props) {
         <div className='bookmarkShow' style={{ backgroundImage:`url(${image})`,backgroundRepeat:"no-repeat",backgroundSize:"contain", 
         height:800,width:800
         }}>
-               <div className='bookmarkDeets'>
+            <div className='bookmarkDeets'>
             <h1>{bookmark.title}</h1>
             <h3>{bookmark.url}</h3>
      
