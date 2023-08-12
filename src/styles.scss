@@ -1,0 +1,90 @@
+// VARIABLES
+
+$maincolor:#E6BEB5;
+$contrastcolor: white;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sniglet&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Borel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&display=swap');
+
+
+@mixin white-text-black-bg {
+    color: $contrastcolor;
+    background-color: $maincolor;
+  }
+  
+  @mixin black-text-white-bg {
+    color: $maincolor;
+    background-color: $contrastcolor;
+  }
+  
+  // ----------------------------
+  // HEADER
+  // ----------------------------
+  
+  nav {
+      @include white-text-black-bg;
+      display: flex;
+      justify-content: center;
+      width: 800px;
+      height: 100px;
+      a {
+          @include white-text-black-bg;
+          font-family: 'Borel', cursive;
+          margin:10px;
+          font-size: 60px;
+      }
+  }
+
+.newBookmarkTitle {
+    .add {
+        color: #211F1C;
+        font-family: 'Alegreya Sans SC', sans-serif;
+        padding: 15px 0 0 105px;
+        width: 18ch;
+        animation: typing 2s steps(18), blink .5s step-end infinite alternate;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 2px solid;
+        font-size: 1.5em;
+        @keyframes typing {
+            from {
+                width: 0
+            }
+        }    
+        @keyframes blink {
+            50% {
+                border-color: transparent
+            }
+        }
+    }
+  
+}
+.newBookDeets {
+    font-family: 'Sniglet', cursive;
+    position: relative;
+    padding: 10px 0 10px 0;
+    left: 13%;
+    top: 2%
+}
+
+.bookmarkIndex {
+    font-family: 'Sniglet', cursive;
+    position: relative;
+    top: 30%;
+    padding: 0 0 0 190px;
+}
+
+.bookmarkShow {
+    font-family: 'Sniglet', cursive;
+
+}
+
+.bookmarkDeets {
+    position: relative;
+    top: 55%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+}
