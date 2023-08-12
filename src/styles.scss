@@ -1,7 +1,13 @@
 // VARIABLES
 
-$maincolor: black;
+$maincolor:#E6BEB5;
 $contrastcolor: white;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sniglet&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Borel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&display=swap');
 
 
 @mixin white-text-black-bg {
@@ -21,13 +27,63 @@ $contrastcolor: white;
   nav {
       @include white-text-black-bg;
       display: flex;
-      justify-content: flex-start;
-  
+      justify-content: center;
+      width: 800px;
+      height: 100px;
+      font-family: 'Josefin Slab', serif;
       a {
           @include white-text-black-bg;
-          margin: 10px;
-          font-size: large;
+          font-family: 'Borel', cursive;
+          margin:10px;
+          font-size: 60px;
       }
   }
 
+.newBookmarkTitle {
+    .add {
+        color: #211F1C;
+        font-family: 'Alegreya Sans SC', sans-serif;
+        padding: 15px 0 0 90px;
+        width: 18ch;
+        animation: typing 2s steps(18), blink .5s step-end infinite alternate;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 2px solid;
+        font-size: 1.5em;
+        @keyframes typing {
+            from {
+                width: 0
+            }
+        }    
+        @keyframes blink {
+            50% {
+                border-color: transparent
+            }
+        }
+    }
+  
+}
+.newBookDeets {
+    font-family: 'Sniglet', cursive;
+    padding: 10px 0 0 90px;
+    position: fixed;
+}
 
+.bookmarkIndex {
+    font-family: 'Sniglet', cursive;
+    position: relative;
+    top: 31%;
+    padding: 0 0 0 185px;
+}
+
+.bookmarkShow {
+    font-family: 'Sniglet', cursive;
+
+}
+
+.bookmarkDeets {
+    position: fixed;
+    top: 55%;
+    left: 24.5%;
+    transform: translate(-50%, -50%);
+}
