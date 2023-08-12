@@ -30,7 +30,6 @@ $contrastcolor: white;
       justify-content: center;
       width: 800px;
       height: 100px;
-      font-family: 'Josefin Slab', serif;
       a {
           @include white-text-black-bg;
           font-family: 'Borel', cursive;
@@ -43,7 +42,7 @@ $contrastcolor: white;
     .add {
         color: #211F1C;
         font-family: 'Alegreya Sans SC', sans-serif;
-        padding: 15px 0 0 90px;
+        padding: 15px 0 0 105px;
         width: 18ch;
         animation: typing 2s steps(18), blink .5s step-end infinite alternate;
         white-space: nowrap;
@@ -65,15 +64,17 @@ $contrastcolor: white;
 }
 .newBookDeets {
     font-family: 'Sniglet', cursive;
-    padding: 10px 0 0 90px;
-    position: fixed;
+    position: relative;
+    padding: 10px 0 10px 0;
+    left: 13%;
+    top: 2%
 }
 
 .bookmarkIndex {
     font-family: 'Sniglet', cursive;
     position: relative;
-    top: 31%;
-    padding: 0 0 0 185px;
+    top: 30%;
+    padding: 0 0 0 190px;
 }
 
 .bookmarkShow {
@@ -82,8 +83,8 @@ $contrastcolor: white;
 }
 
 .bookmarkDeets {
-    position: fixed;
+    position: relative;
     top: 55%;
-    left: 24.5%;
+    left: 75%;
     transform: translate(-50%, -50%);
 }
